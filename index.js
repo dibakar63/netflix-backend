@@ -14,6 +14,8 @@ dotenv.config()
 connectDB()
 //rest object
 const app=express()
+app.get('/',(req,res)=>{
+res.send("Api is running")})
 //middleware
 app.use(cors())
 app.use(express.json());
